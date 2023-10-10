@@ -4,16 +4,15 @@ from gensim.corpora import Dictionary
 from gensim.models.coherencemodel import CoherenceModel
 from gensim.models.ldamodel import LdaModel
 
-from pprint import pprint
+# from pprint import pprint
 
-import spacy
+# import spacy
 
-import pickle
-import re
+# import pickle
+# import re
 import pyLDAvis
 import pyLDAvis.gensim
-
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import pandas as pd
 
 #https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know
