@@ -7,6 +7,7 @@ import nltk
 import pyLDAvis
 import pyLDAvis.gensim
 # import pandas as pd
+import pprint
 
 #https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know
 
@@ -23,7 +24,7 @@ def gen_html(data, p_num_topics = 5, filename = "lda.html"):
                     chunksize=100,
                     alpha='auto',
                     per_word_topics=True)
-    # pprint(lda_model.print_topics())
+    pprint(lda_model.print_topics())
     doc_lda = lda_model[corpus]
     p = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
     pyLDAvis.save_html(p, 'lda.html')
